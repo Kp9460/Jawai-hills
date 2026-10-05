@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JAWAI — The Wild Is Waiting | Field Journal Vol.04</title>
+<meta name="description" content="An interactive wildlife journal from Jawai, Rajasthan. Track leopards, read the hills, and stamp your own safari permit." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,600&family=Space+Grotesk:wght@300;400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" id="progress"></div>
+
+<!-- travelling leopard silhouette -->
+<div class="leo-traveller" id="leoTraveller" aria-hidden="true">
+  <svg viewBox="0 0 220 70" fill="currentColor"><path d="M8 52 Q20 44 34 46 L52 40 Q60 28 78 26 L96 30 L108 22 L118 28 L140 26 Q160 26 172 34 L196 38 Q210 40 212 48 L200 50 L186 46 L170 50 L150 52 L120 56 L96 58 L70 58 L44 58 Q20 58 8 52 Z"/><circle cx="200" cy="38" r="2.2"/><path d="M52 40 L46 56 L50 56 L58 42 Z M70 44 L66 58 L70 58 L76 44 Z M150 52 L148 62 L152 62 L156 52 Z M168 50 L168 60 L172 60 L174 50 Z" /></svg>
+  <span class="leo-label">leo — on the move</span>
+</div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand">JAWAI<span>FIELD JOURNAL — VOL.04</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#story">Story</a><a href="#map">Territory</a><a href="#adventures">Safaris</a>
+    <a href="#leopards">Leopards</a><a href="#gallery">Frames</a><a href="#permit">Permit</a>
+  </nav>
+  <div class="nav-right">
+    <!-- <span class="nav-coord hide-m">25.09°N — 73.09°E</span> -->
+    <a href="#permit" class="btn-permit">Get Permit →</a>
+    <button class="menu-btn" id="menuBtn" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <!-- <p class="hero-kicker">ENTRY Nº 047 — BERA CAVES, JAWAI BANDH • OCT → MAR</p> -->
+  <h1 class="hero-title">
+    <span class="line outline" data-speed="0.08">THE WILD</span>
+    <span class="line solid">IS <em>WAITING</em><sup>✳</sup></span>
+  </h1>
+  <div class="hero-grid">
+    <div class="hero-note">
+      <p class="hand">dear reader — this is not a tour. it's a tracking journal. read the rocks, follow the pugmarks…</p>
+      <div class="hero-cta-row">
+        <a href="#permit" class="btn-lime big">Stamp My Permit</a>
+        <a href="#story" class="btn-ghost big">Read the story ↓</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>98%</b><span>sightings / 90 days</span></div>
+        <div><b>04</b><span>zones, one gypsy</span></div>
+        <div><b>5:30</b><span>am, first light</span></div>
+      </div>
+    </div>
+    <figure class="hero-fig" data-speed="-0.06">
+      <img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?q=80&w=1100&auto=format&fit=crop" alt="Leopard resting on granite rock in Jawai">
+      <figcaption>FIG. 01 — <i>Panthera pardus</i>, granite throne, Bera. <span>shot on 400mm, 6:12 AM</span></figcaption>
+      <span class="stamp">SIGHTED ✓</span>
+    </figure>
+  </div>
+  <div class="marquee"><div class="marquee-track">
+    <span>LEOPARD COUNTRY — </span><span class="o">JAWAI DAM — </span><span>RABARI TRACKERS — </span><span class="o">GRANITE HILLS — </span><span>FLAMINGOS — </span><span class="o">CAVES OF BERA — </span><span>LEOPARD COUNTRY — </span><span class="o">JAWAI DAM — </span><span>RABARI TRACKERS — </span><span class="o">GRANITE HILLS — </span>
+  </div></div>
+  <p class="scroll-hint">scroll to track ↓</p>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto reveal">
+  <div class="container-narrow">
+    <p class="chap">CHAPTER 00 — THE PREMISE</p>
+    <p class="dropcap">Jawai is the only place in India where <span>leopards walk past shepherds</span> and nobody runs. No fences. No cages. Just granite, water, and an old agreement between man and cat. This page is your journal — stamp it as you go.</p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="story-block">
+    <div class="story-text reveal">
+      <p class="chap">01 / THE HILLS</p>
+      <h2>Granite that<br><em>remembers</em> paws.</h2>
+      <p>Bera, Devgiri, Kala Pahar — billion-year-old rocks hollowed into caves. Leopards den inside, sun themselves on top. Because the land is open, you don't <i>search</i> for the cat. You read the hill — and the hill tells you.</p>
+      <p class="hand-sm">↳ field tip: look for langurs alarm-calling. where monkeys shout, the spotted one sits.</p>
+    </div>
+    <figure class="story-fig tall reveal" data-speed="-0.04"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop" alt="Granite hills of Jawai"><figcaption>FIG. 02 — Kala Pahar at dusk</figcaption></figure>
+  </div>
+  <div class="story-block flip">
+    <figure class="story-fig reveal" data-speed="0.05"><img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=800&auto=format&fit=crop" alt="Jawai dam wetlands"><figcaption>FIG. 03 — Jawai Dam, crocodile hour</figcaption></figure>
+    <div class="story-text reveal">
+      <p class="chap">02 / THE WATER</p>
+      <h2>A dam full of<br><em>wings & teeth.</em></h2>
+      <p>Rajasthan's largest dam holds mugger crocodiles, flamingos, pelicans and 100+ migratory birds. Morning safari ends here — mist on water, chai in hand, eagles overhead.</p>
+      <div class="mini-stats"><div><b>120+</b><span>bird species</span></div><div><b>40+</b><span>muggers</span></div><div><b>2 km</b><span>wetland walk</span></div></div>
+    </div>
+  </div>
+  <div class="story-block">
+    <div class="story-text reveal">
+      <p class="chap">03 / THE PEOPLE</p>
+      <h2>Trackers who<br><em>read dust.</em></h2>
+      <p>Rabari herders graze sheep in leopard country every day — and lose almost none. They track on foot at 4 AM and radio your gypsy. You ride. They read. The cat decides.</p>
+      <p class="hand-sm">↳ "leopard ko hum dekhte nahi, pehchante hain." — Ramesh Rabari, tracker since 2009</p>
+    </div>
+    <figure class="story-fig tall reveal" data-speed="-0.05"><img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=800&auto=format&fit=crop" alt="Gypsy safari in the wild"><figcaption>FIG. 04 — open gypsy, Bera trail</figcaption></figure>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="map-sec" id="map">
+  <div class="map-head reveal">
+    <p class="chap">04 / THE TERRITORY</p>
+    <h2>Jawai, <em>mapped by pugmarks.</em></h2>
+    <p class="muted-l">Tap a zone marker. Each pin is a real safari pocket — your driver picks one every morning based on fresh tracks.</p>
+  </div>
+  <div class="map-wrap reveal">
+    <svg class="jmap" viewBox="0 0 600 420" role="img" aria-label="Jawai safari zones map">
+      <rect x="0" y="0" width="600" height="420" rx="24" fill="#10150d"/>
+      <path d="M40 300 Q120 260 150 220 T260 160 T400 140 T560 90" stroke="#2a3524" stroke-width="22" fill="none" stroke-linecap="round" opacity=".7"/>
+      <ellipse cx="430" cy="290" rx="150" ry="80" fill="#16202f" opacity=".9"/>
+      <ellipse cx="430" cy="290" rx="110" ry="55" fill="#1d2c42" opacity=".8"/>
+      <g fill="none" stroke="#3a4a33" stroke-width="1.5" opacity=".8">
+        <path d="M60 120 l40 -50 35 45 45 -60 40 55 50 -40 45 50 40 -35 45 45"/>
+        <path d="M80 160 l30 -35 28 32 34 -42 30 38"/>
+      </g>
+      <text x="60" y="200" fill="#5c6b52" font-size="13" letter-spacing="3">ARAVALLI OUTCROPS</text>
+      <text x="350" y="295" fill="#7fa8c9" font-size="13" letter-spacing="3">JAWAI DAM</text>
+      <g class="pins">
+        <g class="pin" data-zone="bera" transform="translate(200,150)"><circle r="26" class="pulse"/><circle r="10"/><text y="4" text-anchor="middle">1</text></g>
+        <g class="pin" data-zone="kala" transform="translate(330,120)"><circle r="26" class="pulse"/><circle r="10"/><text y="4" text-anchor="middle">2</text></g>
+        <g class="pin" data-zone="devgiri" transform="translate(130,250)"><circle r="26" class="pulse"/><circle r="10"/><text y="4" text-anchor="middle">3</text></g>
+        <g class="pin" data-zone="dam" transform="translate(440,290)"><circle r="26" class="pulse"/><circle r="10"/><text y="4" text-anchor="middle">4</text></g>
+      </g>
+    </svg>
+    <aside class="zone-card" id="zoneCard">
+      <p class="chap" id="zoneKicker">ZONE 01 — TAP A PIN</p>
+      <h3 id="zoneTitle">Bera Caves</h3>
+      <p id="zoneDesc">Highest density. Leopards den in the boulders behind the village. First light = best odds. Sunrise breakfast rock is here.</p>
+      <div class="zone-meta"><span id="zoneTime">⏱ 5:30 AM start</span><span id="zoneOdds">●●●●○ sighting</span></div>
+    </aside>
+  </div>
+</section>
+
+<!-- ADVENTURES -->
+<section class="adventures" id="adventures">
+  <div class="adv-head reveal">
+    <p class="chap">05 / CHOOSE YOUR ADVENTURE</p>
+    <h2>Three ways to <em>enter.</em></h2>
+  </div>
+  <div class="adv-grid">
+    <article class="adv-card reveal" data-safari="sunrise" data-price="4000">
+      <div class="adv-img"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800&auto=format&fit=crop" alt="Sunrise over Jawai hills"><span class="adv-no">I.</span></div>
+      <div class="adv-body">
+        <p class="adv-time">5:30 AM — 2.5 HRS — BERA</p>
+        <h3>Sunrise<br>Stalk</h3>
+        <p>First pugmarks, alarm calls, mist lifting off the rocks. The classic — highest leopard activity.</p>
+        <ul><li>hill breakfast + chai</li><li>dam birding finish</li></ul>
+        <div class="adv-foot"><b>₹4,000<small>/ gypsy</small></b><button class="pick-btn" data-pick="sunrise">Select →</button></div>
+      </div>
+    </article>
+    <article class="adv-card mid reveal" data-safari="sunset" data-price="4000">
+      <div class="adv-img"><img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=800&auto=format&fit=crop" alt="Golden sunset safari"><span class="adv-no">II.</span></div>
+      <div class="adv-body">
+        <p class="adv-time">3:30 PM — 2.5 HRS — KALA PAHAR</p>
+        <h3>Sunset<br>Shadow</h3>
+        <p>Golden backlight, long shadows, leopards waking for the night hunt. For photographers.</p>
+        <ul><li>golden-hour positioning</li><li>sunset chai on rocks</li></ul>
+        <div class="adv-foot"><b>₹4,000<small>/ gypsy</small></b><button class="pick-btn" data-pick="sunset">Select →</button></div>
+      </div>
+    </article>
+    <article class="adv-card reveal" data-safari="fullday" data-price="11500">
+      <div class="adv-img"><img src="https://images.unsplash.com/photo-1549366021-9f761d450615?q=80&w=800&auto=format&fit=crop" alt="Leopard at sunset"><span class="adv-no">III.</span></div>
+      <div class="adv-body">
+        <p class="adv-time">FULL DAY — 9 HRS — ALL ZONES</p>
+        <h3>The Full<br>Journal</h3>
+        <p>Two safaris + dam + village + lunch. For those who want every chapter in one day.</p>
+        <ul><li>caves + dam + village</li><li>lunch & hides included</li></ul>
+        <div class="adv-foot"><b>₹11,500<small>/ gypsy</small></b><button class="pick-btn" data-pick="fullday">Select →</button></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- LEOPARD FACTS -->
+<section class="leos" id="leopards">
+  <div class="leos-head reveal">
+    <div><p class="chap">06 / KNOW YOUR GHOST</p><h2>Leopard facts, <em>collected.</em></h2></div>
+    <p class="collect">COLLECTED <b id="collectCount">0/6</b> — tap a card to flip & collect</p>
+  </div>
+  <div class="leo-grid">
+    <div class="flip reveal"><div class="flip-in"><div class="flip-front"><span>◉<br>01</span><h4>Sees 7× better<br>than you at night</h4><p>tap to reveal →</p></div><div class="flip-back"><h4>Night vision</h4><p>A reflective layer (tapetum) behind the retina. That's why eyeshine glows green in your torch at 5 AM.</p><span class="got">✓ collected</span></div></div></div>
+    <div class="flip reveal"><div class="flip-in"><div class="flip-front"><span>◉<br>02</span><h4>Carries prey<br>2× its weight</h4><p>tap to reveal →</p></div><div class="flip-back"><h4>Up a cliff</h4><p>Jawai leopards haul kills straight up granite faces to keep them from hyenas. Pure shoulder power.</p><span class="got">✓ collected</span></div></div></div>
+    <div class="flip reveal"><div class="flip-in"><div class="flip-front"><span>◉<br>03</span><h4>Each rosette<br>is a fingerprint</h4><p>tap to reveal →</p></div><div class="flip-back"><h4>No two alike</h4><p>Our trackers ID 60+ resident leopards by spot patterns. Ask for "Neelam" or "Zara" — they'll know.</p><span class="got">✓ collected</span></div></div></div>
+    <div class="flip reveal"><div class="flip-in"><div class="flip-front"><span>◉<br>04</span><h4>Leaps 6 m<br>sideways</h4><p>tap to reveal →</p></div><div class="flip-back"><h4>Silent ambush</h4><p>It doesn't chase — it appears. A granite ledge + patience = dinner. You may only hear stones tick.</p><span class="got">✓ collected</span></div></div></div>
+    <div class="flip reveal"><div class="flip-in"><div class="flip-front"><span>◉<br>05</span><h4>Lives beside<br>shepherds</h4><p>tap to reveal →</p></div><div class="flip-back"><h4>The Jawai pact</h4><p>Rabaris consider the leopard a guardian. Attacks are near-zero — a coexistence studied worldwide.</p><span class="got">✓ collected</span></div></div></div>
+    <div class="flip reveal"><div class="flip-in"><div class="flip-front"><span>◉<br>06</span><h4>Cubs stay<br>2 years</h4><p>tap to reveal →</p></div><div class="flip-back"><h4>Family caves</h4><p>Visit Dec–Feb and you may see a mother teaching cubs to climb. Keep distance, keep quiet, keep magic.</p><span class="got">✓ collected</span></div></div></div>
+  </div>
+</section>
+
+<!-- HORIZONTAL GALLERY -->
+<section class="frames" id="gallery">
+  <div class="frames-head reveal"><p class="chap">07 / FRAMES FROM THE FIELD</p><h2>Drag through the <em>golden hours.</em></h2></div>
+  <div class="h-scroll" id="hScroll">
+    <figure class="frame"><img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?q=80&w=900&auto=format&fit=crop" alt=""><figcaption><b>PLATE 01 — The Throne</b><span>Bera, 6:12 AM • 400mm</span></figcaption></figure>
+    <figure class="frame"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=900&auto=format&fit=crop" alt=""><figcaption><b>PLATE 02 — Still Water</b><span>Jawai Dam, 8:40 AM</span></figcaption></figure>
+    <figure class="frame"><img src="https://images.unsplash.com/photo-1549366021-9f761d450615?q=80&w=900&auto=format&fit=crop" alt=""><figcaption><b>PLATE 03 — Amber Hour</b><span>Kala Pahar, 5:58 PM</span></figcaption></figure>
+    <figure class="frame"><img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=900&auto=format&fit=crop" alt=""><figcaption><b>PLATE 04 — Dust Trail</b><span>Devgiri track, 7:05 AM</span></figcaption></figure>
+    <figure class="frame"><img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?q=80&w=900&auto=format&fit=crop" alt=""><figcaption><b>PLATE 05 — Small Hunter</b><span>Dam reeds, 9:15 AM</span></figcaption></figure>
+    <figure class="frame"><img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=900&auto=format&fit=crop" alt=""><figcaption><b>PLATE 06 — Last Light</b><span>Sunset point, 6:31 PM</span></figcaption></figure>
+  </div>
+  <p class="drag-hint">← drag / scroll →</p>
+</section>
+
+<!-- CALENDAR + PERMIT -->
+<section class="permit-sec" id="permit">
+  <div class="permit-head reveal"><p class="chap">08 / YOUR PERMIT</p><h2>Stamp it. <em>It's yours.</em></h2></div>
+  <div class="permit-grid">
+    <div class="cal reveal">
+      <div class="cal-head"><button id="calPrev">←</button><h3 id="calTitle">Month</h3><button id="calNext">→</button></div>
+      <div class="cal-days"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div>
+      <div class="cal-grid" id="calGrid"></div>
+      <div class="cal-legend"><span><i class="dot ok"></i>open</span><span><i class="dot few"></i>2 gypsies left</span><span><i class="dot full"></i>full</span></div>
+      <p class="sel-date">SELECTED → <b id="selDateLabel">pick a green date</b></p>
+    </div>
+
+    <div class="permit reveal" id="permitCard">
+      <div class="permit-top"><span>RAJASTHAN FOREST • JAWAI RANGE</span><span>Nº <b id="permitNo">JW-0482</b></span></div>
+      <h3>SAFARI PERMIT / PASS</h3>
+      <div class="permit-row">
+        <div><label>TRACK</label><div class="seg" id="trackSeg">
+          <button class="on" data-track="sunrise" data-price="4000">Sunrise ₹4k</button>
+          <button data-track="sunset" data-price="4000">Sunset ₹4k</button>
+          <button data-track="fullday" data-price="11500">Full Day ₹11.5k</button>
+        </div></div>
+      </div>
+      <div class="permit-row two">
+        <div><label>GUESTS</label><div class="counter"><button id="gMinus">−</button><b id="gCount">2</b><button id="gPlus">+</button></div><small>1 gypsy = max 6</small></div>
+        <div><label>GYPSIES</label><div class="counter"><button id="jMinus">−</button><b id="jCount">1</b><button id="jPlus">+</button></div><small id="seatNote">12 seats? add gypsy</small></div>
+      </div>
+      <div class="permit-row two">
+        <div><label>NAME</label><input id="pName" placeholder="Your name"></div>
+        <div><label>PHONE</label><input id="pPhone" placeholder="+91 …"></div>
+      </div>
+      <div class="bill">
+        <div><span id="billTrack">Sunrise Stalk × 1 gypsy</span><b id="billBase">₹4,000</b></div>
+        <div><span>Extra guests beyond 2 (₹600 each)</span><b id="billExtra">₹0</b></div>
+        <div class="total"><span>LIVE TOTAL</span><b id="billTotal">₹4,000</b></div>
+      </div>
+      <button class="btn-lime big full" id="stampBtn">STAMP & BOOK ON WHATSAPP →</button>
+      <p class="permit-fine">20% advance to hold • free date change once • permits included • pay rest after safari</p>
+      <span class="permit-stamp" id="permitStamp">JAWAI ★ APPROVED</span>
+    </div>
+  </div>
+</section>
+
+<!-- FIELD NOTES -->
+<section class="notes" id="notes">
+  <div class="notes-head reveal"><p class="chap">09 / FIELD NOTES</p><h2>Pinned by <em>guests.</em></h2></div>
+  <div class="notes-grid">
+    <article class="note reveal"><span class="tape"></span><p>"Saw THREE leopards in 40 min. Ramesh knew every cave by name. Breakfast on the rock at sunrise — I'll shut up now, just go."</p><footer><b>Rohit S.</b><span>Jaipur • Sunrise • ★★★★★</span></footer></article>
+    <article class="note tilt reveal"><span class="tape"></span><p>"Full day = caves + crocs + flamingos + village chai. Kids (7 & 10) still talk about 'their' leopard Zara."</p><footer><b>Neha V.</b><span>Delhi • Full Day • ★★★★★</span></footer></article>
+    <article class="note tilt2 reveal"><span class="tape"></span><p>"Golden-hour positioning was unreal. Driver waited 20 min silently for the perfect backlight frame. Pro work."</p><footer><b>Amit S.</b><span>Udaipur • Sunset • ★★★★★</span></footer></article>
+    <article class="note reveal"><span class="tape"></span><p>"Came for photos, stayed for stories. Rabari songs by the bonfire + a cub sighting next morning. 11/10."</p><footer><b>James W.</b><span>UK • Photo tour • ★★★★★</span></footer></article>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="enter">
+  <p class="chap reveal">FINAL ENTRY — DAWN, TOMORROW</p>
+  <h2 class="enter-title reveal"><span>ENTER</span><span class="stroke">THE WILD</span></h2>
+  <p class="reveal">One gypsy. Six seats. A hill that already knows you're coming.</p>
+  <div class="enter-row reveal">
+    <a href="#permit" class="btn-lime huge" id="enterBtn">Enter The Wild →</a>
+    <a href="tel:+919829000000" class="btn-ghost huge">📞 +91 98290 00000</a>
+  </div>
+  <p class="enter-fine">Bera village, Jawai Bandh, Pali 306021 • 7 AM – 10 PM • permits by Forest Dept.</p>
+</section>
+
+<footer class="foot">
+  <span>JAWAI FIELD JOURNAL — VOL.04 © 2026</span>
+  <span>25.09°N 73.09°E • drawn, tracked & stamped in Rajasthan</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
